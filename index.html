@@ -3,80 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jacob Isaacs - Articles</title>
-    <link rel="stylesheet" href="style.css">
-    <style>
-        /* Dark mode styles */
-        body.dark-mode {
-            background-color: #1a1a1a;
-            color: #e0e0e0;
-        }
-        
-        body.dark-mode header {
-            border-bottom-color: #444444;
-        }
-        
-        body.dark-mode h1, body.dark-mode h2 {
-            color: #f0f0f0;
-        }
-        
-        body.dark-mode a {
-            color: #6db3f2;
-        }
-        
-        /* Sunglasses button styles */
-        .sunglasses-btn {
-            background: none;
-            border: none;
-            cursor: pointer;
-            font-size: 1.5em;
-            vertical-align: middle;
-            margin-left: 5px;
-            transition: transform 0.2s;
-        }
-        
-        .sunglasses-btn:hover {
-            transform: scale(1.3);
-        }
-        
-        .sunglasses-btn:active {
-            transform: scale(1);
-        }
-    </style>
+    <title>Jacob Isaacs</title>
+    <link rel="stylesheet" href="style-v2.css">
+    <script src="darkmode.js"></script>
 </head>
 <body>
-    <header>
-        <h1>Jacob Isaacs</h1>
-        <p>Feast your eyes upon my beautiful website. You might want to wear sunglasses
-        <button class="sunglasses-btn" onclick="toggleDarkMode()" title="Toggle dark mode">🕶️</button>
-        so the beauty doesn't blind you. Poke around if it tickles your fancy.</p>
-    </header>
-    
-    <main>
-        <h2>Articles</h2>
-        <ul>
-            <li><a href="article1.html">We Need Digital Manners</a> - 09 September 2025</li>
-            <li><a href="article2.html">My Review of Breakneck by Dan Wang</a> - 14 September 2025</li>
-            <li><a href="article3.html">What does art look like in a future with AI?</a> - 16 September 2025</li>
-        </ul>
-    </main>
-
-    <script>
-        // Check if user has a saved preference
-        if (localStorage.getItem('darkMode') === 'enabled') {
-            document.body.classList.add('dark-mode');
-        }
+    <div class="container">
+        <header>
+            <h1>Jacob Isaacs</h1>
+            <nav>
+                <a href="#writing">Writing</a>
+                <span class="separator">·</span>
+                <a href="#about">About</a>
+                <span class="separator">·</span>
+                <a href="#contact">Contact</a>
+            </nav>
+        </header>
         
-        function toggleDarkMode() {
-            document.body.classList.toggle('dark-mode');
+        <main>
+            <section class="intro">
+                <p>I'm 22 years old. I write about technology, digital culture, and art. Currently thinking about how we shape our tools and how they shape us.</p>
+                <p class="sunglasses-note">This site might be too beautiful for your eyes. You might want to wear sunglasses to protect them.</p>
+            </section>
             
-            // Save user preference
-            if (document.body.classList.contains('dark-mode')) {
-                localStorage.setItem('darkMode', 'enabled');
-            } else {
-                localStorage.setItem('darkMode', 'disabled');
-            }
-        }
-    </script>
+            <section id="writing" class="writing-section">
+                <h2>Recent Writing</h2>
+                
+                <article class="post-preview">
+                    <span class="date">September 2025</span>
+                    <h3><a href="article1.html">We Need Digital Manners</a></h3>
+                    <p>My failed experiment with a flip phone led me down a rabbit hole about addiction, social norms, and why I spent 8 hours on Twitter last Thursday.</p>
+                </article>
+                
+                <article class="post-preview">
+                    <span class="date">September 2025</span>
+                    <h3><a href="article3.html">What Does Art Look Like in a Future with AI?</a></h3>
+                    <p>When cameras arrived, painters pivoted to impressionism. As AI transforms creative work, I think we're heading toward something radically more participatory.</p>
+                </article>
+                
+                <article class="post-preview">
+                    <span class="date">September 2025</span>
+                    <h3><a href="article2.html">Review: Breakneck by Dan Wang</a></h3>
+                    <p>A book about China's industrial policy that's really about how nations build trust through public works.</p>
+                </article>
+            </section>
+            
+            <section id="about" class="about-section">
+                <h2>About</h2>
+                <p>I recently graduated from college and I'm trying to figure out what to do with my life. This website is where I think out loud about things that interest me: how technology changes behavior, what makes good art, and why we do the things we do.</p>
+                <p>I believe in narrowing affordances, embodying the Rat Park, and occasionally putting down my phone.</p>
+            </section>
+            
+            <footer>
+                <p>© 2025 · <a href="mailto:jacob@example.com">Email</a> · <a href="https://twitter.com/yourusername">Twitter</a></p>
+            </footer>
+        </main>
+    </div>
 </body>
 </html>
