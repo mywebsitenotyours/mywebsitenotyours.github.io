@@ -120,22 +120,24 @@ body.dark-mode footer {
 /* Sunglasses button styles */
 .sunglasses-btn {
     background: rgba(200, 200, 200, 0.1);
-    border: 1px solid #cccccc;
+    border: 1.5px solid #999999;  /* More visible gray border */
     border-radius: 6px;
     cursor: pointer;
-    font-size: 1.5em;
+    font-size: 1.2em;  /* Slightly smaller to help fit */
     vertical-align: middle;
-    margin-left: 5px;
+    margin-left: 3px;  /* Less margin */
     transition: all 0.2s;
-    padding: 4px 8px;
+    padding: 2px 6px;  /* Smaller padding */
     line-height: 1;
+    display: inline-block;  /* Ensures it stays inline */
+    white-space: nowrap;  /* Prevents wrapping */
 }
 
 .sunglasses-btn:hover {
     transform: scale(1.1);
-    background: rgba(200, 200, 200, 0.2);
-    border-color: #999999;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    background: rgba(200, 200, 200, 0.3);
+    border-color: #666666;  /* Darker border on hover */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.15);
 }
 
 .sunglasses-btn:active {
@@ -145,10 +147,10 @@ body.dark-mode footer {
 /* Dark mode adjustments for button */
 body.dark-mode .sunglasses-btn {
     background: rgba(255, 255, 255, 0.05);
-    border-color: #555555;
+    border-color: #777777;  /* Visible gray border in dark mode */
 }
 
 body.dark-mode .sunglasses-btn:hover {
-    background: rgba(255, 255, 255, 0.1);
-    border-color: #777777;
+    background: rgba(255, 255, 255, 0.15);
+    border-color: #999999;  /* Lighter border on hover in dark mode */
 }
