@@ -1,31 +1,142 @@
+/* style.css - Main stylesheet with dark mode support */
+
+/* Light mode (default) styles */
 body {
-    font-family: Georgia, 'Times New Roman', serif;
+    font-family: Georgia, serif;
     line-height: 1.6;
     max-width: 600px;
     margin: 0 auto;
     padding: 20px;
     background-color: #ffffff;
-    color: #000000;
-    font-size: 16px;
+    color: #333333;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 header {
-    margin-bottom: 30px;
-    border-bottom: 1px solid #cccccc;
-    padding-bottom: 10px;
+    text-align: center;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #dddddd;
+    padding-bottom: 20px;
 }
 
-header h1 {
-    font-size: 1.2em;
-    font-weight: normal;
-    margin: 0;
+h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
 }
 
-header h1 a {
-    color: #000000;
+h2 {
+    color: #444444;
+    margin-top: 30px;
+}
+
+h3 {
+    color: #555555;
+    margin-top: 25px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 15px;
+}
+
+a {
+    color: #0066cc;
     text-decoration: none;
 }
 
+a:hover {
+    text-decoration: underline;
+}
+
+article {
+    line-height: 1.8;
+}
+
+article p {
+    margin-bottom: 1.2em;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #dddddd;
+    margin: 2em 0;
+}
+
+.date {
+    color: #666666;
+    font-style: italic;
+    margin-bottom: 2em;
+}
+
+footer {
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 1px solid #dddddd;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+}
+
+body.dark-mode header {
+    border-bottom-color: #444444;
+}
+
+body.dark-mode h1, 
+body.dark-mode h2 {
+    color: #f0f0f0;
+}
+
+body.dark-mode h3 {
+    color: #d0d0d0;
+}
+
+body.dark-mode a {
+    color: #6db3f2;
+}
+
+body.dark-mode a:hover {
+    color: #8cc8f7;
+}
+
+body.dark-mode hr {
+    border-top-color: #444444;
+}
+
+body.dark-mode .date {
+    color: #999999;
+}
+
+body.dark-mode footer {
+    border-top-color: #444444;
+}
+
+/* Sunglasses button styles */
+.sunglasses-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5em;
+    vertical-align: middle;
+    margin-left: 5px;
+    transition: transform 0.2s;
+    padding: 0;
+    line-height: 1;
+}
+
+.sunglasses-btn:hover {
+    transform: scale(1.1);
+}
+
+.sunglasses-btn:active {
+    transform: scale(0.95);
+}
 header h1 a:hover {
     text-decoration: underline;
 }
