@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dear Jake,</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="darkmode.js"></script>
+</head>
+<body>
+    <header>
+        <h1><a href="index.html">Jacob Isaacs</a></h1>
+    </header>
+
+    <article>
+        <h2>Rules to an Unsuccessful Life</h2>
+        <time datetime="2026-03-31">31 March 2026</time>
+
+        <p>Dear Jake,</p>
+
+        <p>There's a few rules to an unsuccessful life. If you're not careful they will become your default. No time to waste so let's get right to it.</p>
+
+        <p>Firstly, really care what other people think about you. Especially old friends and family members. Think of what your uncles and aunts would approve of and make sure ere towards their opinions because the older people in your life know what's best for you.</p>
+
+        <p>Next, you're too busy to exercise. There's lots of competing priorities in life and exercise would take the spot of something else you could do during the day. Besides, it takes a lot of willpower and discipline and you wouldn't want to start with going really slow or using really light weights. How embarrassing!</p>
+
+        <p>And don't exercise with others because they'll always be thinking about how much worse you are and will judge your entire character based on your lack of ability to lift 30lb dumbbells.</p>
+
+        <p>Stay on your phone a lot. There's lots of interesting things on social media, substack, the NYTimes, podcasts, blogs and it's very important that you stay abreast(hah) of what these people think everyday. You wouldn't want to miss out on what they have to say one day right? Keep your phone charging by your bed and use it as an alarm. It's a great activity right when you wake up and before bed otherwise how will you ever keep up with all the important and entertaining things of the world?! You never want to be left out or caught lacking in a conversation.</p>
+
+        <p>Go to bed whenever you feel like it each night! Your body will tell you when you want to go to bed and besides, if you're staying up late there's probably something very entertaining worth staying up for! Variety is the spice of life and if you remember something, it's best to do it urgently rather than wait till the next morning. You want the opportunity for excitement and adventure and the same nightly bedtime routine would be dull and monotonous.</p>
+
+        <p>These are the keys to finding the kingdom of hell on earth.</p>
+
+        <p>Love,<br>
+        Yourself</p>
+
+    </article>
+
+    <footer>
+        <p>If you're lost it's okay. Take some deep breaths and find your way back
+            <a href="index.html">home.</a>
+        </p>
+    </footer>
+</body>
+</html>
